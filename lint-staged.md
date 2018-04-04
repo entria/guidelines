@@ -4,7 +4,7 @@ Use [lint-staged](https://github.com/okonet/lint-staged) to make your code unifo
 
 Example of Lint-staged config:
 
-"lint-staged": {
+```"lint-staged": {
     "*.js": [
       "prettier --write --single-quote true --trailing-comma all --print-width 100",
       "yarn lint --fix",
@@ -13,8 +13,8 @@ Example of Lint-staged config:
       "jest --bail --findRelatedTests"
       "git add"
     ]
-  },
-
+  },
+```
 ## Prettier
 
 Use [Prettier](https://github.com/prettier/prettier) to make your code uniform, do not fight your friends
