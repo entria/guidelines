@@ -1,7 +1,8 @@
-# Flow in React
+# React components
 
-## Always type your Props
+### Always type your Props and State
 
+### Stateless
 ```jsx
 type Props = {
    isLoading: boolean,
@@ -15,8 +16,7 @@ const TextWithLoading = ({ isLoading, children }: Props) => {
 }
 ```
 
-### Type your State if needed
-
+### Stateful
 ```jsx
 type Props = {};
 type State = {
