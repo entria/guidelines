@@ -32,7 +32,7 @@ type Props = OwnProps & FormikProps<OwnProps, Values>;
 ```
 
 ### Use withFormik
-```
+```jsx
 const MyForm = withFormik({
   mapPropsToValues: () => ({
     text: '',
