@@ -73,11 +73,11 @@ onEndReached = () => {
     const total = notifications.edges.length + TOTAL_REFETCH_ITEMS;
     const refetchVariables = fragmentVariables => ({
       ...fragmentVariables,
-      count: TOTAL_REFETCH_ITEMS,
-      cursor: endCursor,
+      first: TOTAL_REFETCH_ITEMS,
+      after: endCursor,
     });
     const renderVariables = {
-      count: total,
+      first: total,
     };
 
     this.props.relay.refetch(
